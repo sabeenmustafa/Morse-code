@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .body
+            {
+                height: 100%;
+            }
+            .back
+            {
+                width:100%;
+                height:100%;
+                background-size: cover;
+                filter:blur(5px);
+                position: relative;
+            }
+            .above
+            {
+                width:100%;
+                height:100%;
+                top:0;
+                position:absolute;
+                text-align: center;
+            }
+            .heading
+            {
+                font-size: 80pt;
+                color:white;
+                font-weight: bold;
+                font-family: Georgia;
+                text-shadow: 10px 10px 10px black;
+            }
+            .button
+            {
+                color:white;
+                background-color: rgb(85, 21, 21);
+                font-size: 30pt;
+                font-weight: bold;
+                padding: 30px;
+
+            }
+        </style>
+    </head>
+    <body class="body">
+        <div class="back">
+            <img src="../static/images/morse.jpg" style="width:100%; height:100%">
+        </div>
+        <div class="above">
+            <br>
+            <br>
+            <br>
+            <h3 class="heading">Choose Option</h3>
+            <a  href="morse1.html"><button type="button" class="button"> Start your WebCam </button></a>
+             <br><br>
+             <form enctype="multipart/form-data" action="/uploader">
+             <input type="file" class="button" name="file" text="Upload your video"/><br><br>
+            <input type="submit" text="submit" class ="button"/>
+          </form>
+        </div>
+    </body>
+</html>
